@@ -1,0 +1,10 @@
+.mat-column-X,   .mat-column-Y,   .mat-column-time,   .mat-column-correct {
+    width: 30px;
+    border: 1px solid currentColor;
+    padding-right: 10px;
+    text-align: center;
+  }
+
+  .mat-cell{
+    text-align: center;
+  }

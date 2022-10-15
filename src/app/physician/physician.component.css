@@ -1,0 +1,33 @@
+
+img{
+    width: auto;
+    height: 200px;
+}
+.matcard-div{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  mat-card{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+  }
+
+  .table-container, .user-container {
+  display: flex;
+margin-top: 10px;
+width: 100%;
+  }
+
+  h2{
+    display: inline-block;
+  }
+
+
+
+
+

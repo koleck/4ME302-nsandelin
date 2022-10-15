@@ -1,0 +1,16 @@
+.table-container{
+    display: flex;
+  margin-top: 10px;
+  width: 100%;
+    }
+   
+    table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      
+      td, th {
+        border: 1px solid gray;
+        text-align: center;
+        padding: 5px;
+      }

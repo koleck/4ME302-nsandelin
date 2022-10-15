@@ -1,0 +1,40 @@
+<div>
+    <h2>Welcome Researchers</h2>
+    <img src="assets/researcher.jpg">
+</div>
+<h2>Patient data</h2>
+<div class="table-container">
+<app-table-one></app-table-one>
+<app-table-two></app-table-two>
+<app-table-three></app-table-three>
+<app-table-four></app-table-four>
+<app-table-five></app-table-five>
+<app-table-six></app-table-six>
+</div>
+<div>
+  <h3>Get the RSS Feed: Titles & Links</h3>
+  <a href="https://cors-anywhere.herokuapp.com/">Please visit cors-anywhere first and click on "request temporary access to demo server" for RSS function to work </a>
+ <mat-icon>trending_flat</mat-icon>
+  <button mat-raised-button (click)="GetRSS()">
+   <mat-icon>share</mat-icon> Get Rss Data
+    </button>
+   
+  </div>
+  <div>
+    <table>
+
+    <tr>
+      <th>Title</th>
+      <th>Link</th>
+      </tr>
+      <tr *ngFor="let i of Rss?.rss?.channel[0]?.item">
+      <td >{{i.title[0]}}</td>
+      <td >{{i.link[0]}}</td>
+    </tr>
+
+  </table>
+  </div>
+  <div>
+    <h2>User activity</h2>
+    <app-patient-activity></app-patient-activity>
+ </div>

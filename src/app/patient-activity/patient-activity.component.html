@@ -1,0 +1,25 @@
+<div class="table-container">
+<table>
+
+    <tr>
+      <th>userID</th>
+      <th>username</th>
+      <th>email</th>
+      <th>roleID</th>
+      <th>organization</th>
+      <th>longitude</th>
+      <th>latitude</th>
+      </tr>
+      <tr *ngFor="let i of users">
+      <td >{{i.userID}}</td>
+      <td >{{i.username}}</td>
+      <td >{{i.email}}</td>
+      <td >{{i.Role_IDrole}}</td>
+      <td >{{i.Organization}}</td>
+      <td >{{i.lat}}</td>
+      <td >{{i.long}}</td>
+      
+    </tr>
+
+  </table>
+</div>

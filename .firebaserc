@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "sistachansen-f3567": {
+      "hosting": {
+        "firebaseauth": [
+          "sistachansen-f3567"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "sistachansen-f3567"
+  }
+}

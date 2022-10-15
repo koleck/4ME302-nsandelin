@@ -1,0 +1,63 @@
+
+.grid-container {
+    display: inline-grid;
+    overflow-y: scroll;
+    grid-template-columns: 100px 100px 100px 100px 100px 100px;
+    justify-content: center;
+    align-content: center;
+    column-width: 100px;
+    grid-row-gap: 5px;
+    grid-column-gap: 16px;
+}
+
+img{
+    width: auto;
+    height: 200px;
+}
+h2{
+    color:blueviolet;
+}
+button{
+    margin: 5px;
+}
+ul {
+    display: block;
+    list-style-type: none;
+    max-height:300px;
+    overflow:hidden; 
+}
+
+li a {
+    background: beige;
+    color: white;
+    display: block;
+    padding: 5px;
+    margin: 5px;
+}
+
+.matcard-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .table-container{
+    display: flex;
+  margin-top: 10px;
+  width: 100%;
+    }
+   
+    table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      
+      td, th {
+        border: 1px solid gray;
+        text-align: left;
+        padding: 5px;
+      }
+
+      a{
+        font-style: italic;
+      }

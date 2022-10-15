@@ -1,0 +1,20 @@
+<div *ngIf="!isLoggedIn" class="matcard-div">
+    <mat-card>
+    <mat-card-content>
+        <mat-card-title>Welcome to the site, please sign in below</mat-card-title>
+        <mat-divider></mat-divider>
+        <mat-card-title>patients</mat-card-title>
+        <button mat-raised-button color="primary"(click)="signinGooglePopup()"><mat-icon>launch</mat-icon>Sign in with Google</button>
+        <br>
+        <br>
+        <br>
+        <mat-card-title>researchers</mat-card-title>
+        <button mat-raised-button color="primary" (click)="signinGithubPopup()"><mat-icon>open_in_browser</mat-icon>Sign in with Github</button>
+        <br>
+        <br>
+        <br>
+        <mat-card-title>physicians</mat-card-title>  
+        <button mat-raised-button color="primary" (click)="signinTwitterPopup()"><mat-icon>launch</mat-icon>Sign in with Twitter</button>
+    </mat-card-content>
+</mat-card>
+</div>
