@@ -11,6 +11,34 @@
 <app-table-five></app-table-five>
 <app-table-six></app-table-six>
 </div>
+<app-spiraldrawing></app-spiraldrawing>
+<h3>Categorize drawings</h3>
+<div class="dropdown">
+  <select id="draw" name="draw" #draw (change)="submitButton(draw.value)">
+      <option default>Good</option>
+      <option>OK</option>
+      <option>Needs improvement</option>
+      <option>Bad</option>
+      <option>Cannot assess</option>
+      </select>
+  <h3>Category chosen: {{draw.value}}</h3>
+  <select id="draw2" name="draw2" #draw2 (change)="submitButton2(draw2.value)">
+    <option default>Good</option>
+    <option>OK</option>
+    <option>Needs improvement</option>
+    <option>Bad</option>
+    <option>Cannot assess</option>
+    </select>
+<h3>Category chosen: {{draw2.value}}</h3>
+<select id="draw3" name="draw3" #draw3 (change)="submitButton3(draw3.value)">
+  <option default>Good</option>
+  <option>OK</option>
+  <option>Needs improvement</option>
+  <option>Bad</option>
+  <option>Cannot assess</option>
+  </select>
+<h3>Category chosen: {{draw3.value}}</h3>
+</div>
 <div>
   <h3>Get the RSS Feed: Titles & Links</h3>
   <a href="https://cors-anywhere.herokuapp.com/">Please visit cors-anywhere first and click on "request temporary access to demo server" for RSS function to work </a>
@@ -37,4 +65,5 @@
   <div>
     <h2>User activity</h2>
     <app-patient-activity></app-patient-activity>
+  
  </div>

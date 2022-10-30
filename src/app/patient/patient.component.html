@@ -1,6 +1,17 @@
 <div class="matcard-div"><mat-card>
-<h1>Welcome patients</h1>
+<h1>Welcome patient 2</h1>
 <img src="assets/flower-patient.jpg">
+<div>
+    <h3>How are you feeling today?</h3>
+    <select id="feeling" name="feeling" #feeling (change)="submitButton(feeling.value)">
+        <option default>Great!</option>
+        <option>Good</option>
+        <option>Neutral</option>
+        <option>Not good</option>
+        <option>Really bad</option>
+        </select>
+    <h3>Im feeling: {{feeling.value}}</h3>
+</div>
 <h3>Please find the video knowledge base below:</h3>
 <mat-list>
     <mat-list-item>
@@ -21,3 +32,17 @@
                 </mat-list>
 </mat-card>
 </div>
+<div class="matcard-div">
+<mat-card>
+    <h2>Total performed clicks on latest session: {{index}}</h2>
+    <h2>Amount of good quality clicks: {{correct}}</h2>
+    <h2>Amount of missed clicks: {{notcorrect}}</h2>
+    <h2>Hit ratio on latest session: {{ratio}}</h2>
+    <h3>Highscore: {{hs}} </h3>
+    <h2>Amount of sessions performed:</h2>
+    <h4>Week: 1</h4>
+    <h4>Month: 3</h4>
+    <app-linechart></app-linechart>
+</mat-card>
+</div>
+

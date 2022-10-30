@@ -23,8 +23,9 @@ import { TableThreeComponent } from './table-three/table-three.component';
 import { TableFourComponent } from './table-four/table-four.component';
 import { TableFiveComponent } from './table-five/table-five.component';
 import { TableSixComponent } from './table-six/table-six.component';
-import { PatientActivityComponent } from './patient-activity/patient-activity.component'
-
+import { PatientActivityComponent } from './patient-activity/patient-activity.component';
+import { LinechartComponent } from './linechart/linechart.component';
+import { SpiraldrawingComponent } from './spiraldrawing/spiraldrawing.component'
 
 const routers: Routes = [
   { path: 'hem-component', component: HemComponent },
@@ -48,6 +49,8 @@ const routers: Routes = [
     TableFiveComponent,
     TableSixComponent,
     PatientActivityComponent,
+    LinechartComponent,
+    SpiraldrawingComponent,
 
   ],
   imports: [
@@ -59,6 +62,7 @@ const routers: Routes = [
     MatDividerModule,
     MatListModule,
     MatTableModule,
+    
     AngularFireModule.initializeApp({
       apiKey: "AIzaSyCivCd-cqm7i0y_qEPQYm_cI0PpSsMe_VM",
       authDomain: "sistachansen-f3567.firebaseapp.com",

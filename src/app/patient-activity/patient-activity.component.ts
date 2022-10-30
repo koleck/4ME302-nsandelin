@@ -10,8 +10,6 @@ interface User{
   organization?: string;
   lat?: string;
   long?: string;
-  
-
 }
 @Component({
   selector: 'app-patient-activity',

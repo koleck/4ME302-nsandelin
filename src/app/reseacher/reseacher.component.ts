@@ -1,8 +1,9 @@
 
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import * as xml2js from "xml2js";
 import { NewsRss } from '../news-rss';
 import { HttpClient } from '@angular/common/http';
+import { ElementRef } from '@angular/core';
 
 
 @Component({
@@ -12,7 +13,12 @@ import { HttpClient } from '@angular/common/http';
 })
 export class ReseacherComponent implements OnInit {
   Rss: NewsRss;
-
+  draw = "";
+  draw2 = "";
+  draw3 = "";
+  @ViewChild('draw') drawElement: ElementRef;
+  @ViewChild('draw2') draw2Element: ElementRef;
+  @ViewChild('draw3') draw3Element: ElementRef;
   CORS_PROXY = "https://cors-anywhere.herokuapp.com/"
   constructor(private http: HttpClient) {
   
@@ -22,7 +28,17 @@ export class ReseacherComponent implements OnInit {
    
   }
   
+  submitButton(drawings) {
+    this.draw = drawings;
+  }
 
+  submitButton2(drawings) {
+    this.draw2 = drawings;
+  }
+
+  submitButton3(drawings) {
+    this.draw3 = drawings;
+  }
   async GetRSS() {
     const req: Object = {
       observe: "body",

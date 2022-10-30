@@ -1,4 +1,7 @@
-
+.dropdown{
+  display: flex;
+  justify-content: space-evenly;
+}
 .grid-container {
     display: inline-grid;
     overflow-y: scroll;

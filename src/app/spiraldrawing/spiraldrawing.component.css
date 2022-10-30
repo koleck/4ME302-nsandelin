@@ -1,0 +1,8 @@
+canvas{
+    border-style: solid;
+}
+
+.canvas-container{
+    display: flex;
+    justify-content: center;
+}
